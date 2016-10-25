@@ -6,4 +6,16 @@
 //  Copyright © 2016 Hill, Isaac. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class Card
+{
+    private var backImage : UIImage
+    private var isFaceUp : Bool
+    
+    init()
+    {
+        backImage = UIImage()
+        isFaceUp = false
+    }
+}
