@@ -10,8 +10,8 @@ import UIKit
 
 class PlayingCard : Card
 {
-    //private var rank : Int
-    private var suit : String
+    //internal var rank : Int
+    internal var suit : String
     {
         get
         {
@@ -22,7 +22,7 @@ class PlayingCard : Card
             self.suit = suit
         }
     }
-    private var color : UIColor
+    internal var color : UIColor
     {
         get
         {
@@ -33,7 +33,7 @@ class PlayingCard : Card
             self.color = color
         }
     }
-    private var rank : Int
+    internal var rank : Int
     {
         get
         {
@@ -59,6 +59,7 @@ class PlayingCard : Card
     override func toString() -> String
     {
         let backStatus : String
+        
         if super.isFacing()
         {
             backStatus = " is face up"

@@ -10,7 +10,7 @@ import UIKit
 
 class Card
 {
-    private var backImage : UIImage
+    internal var backImage : UIImage
     {
         get
         {
@@ -21,7 +21,7 @@ class Card
             self.backImage = backImage
         }
     }
-    private var isFaceUp : Bool
+    internal var isFaceUp : Bool
     {
         get
         {
