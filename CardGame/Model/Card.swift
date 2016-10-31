@@ -35,7 +35,7 @@ class Card
     
     init()
     {
-        backImage = UIImage()
+        backImage = UIImage(named: "cardback")!
         isFaceUp = false
     }
     
