@@ -73,4 +73,22 @@ class PlayingCard : Card
         
         return description
     }
+    
+    //The class modifier makes it so the method is visible without an instance
+    //You would call it by ClassName.method()
+    //In this case PlayingCard.validRanks()
+    class func validRanks() -> [String]
+    {
+        return ["??","A","2","3","4","5","6","7","8","9","10","J","Q","K"]
+    }
+    
+    class func maxRank() -> Int
+    {
+        return validRanks().count - 1
+    }
+    
+    class func validSuits() -> [String]
+    {
+        return ["♦️","♣️","♥️","♠️"]
+    }
 }
