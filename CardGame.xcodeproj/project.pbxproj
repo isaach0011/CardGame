@@ -14,6 +14,8 @@
 		BF6BAE4F1DBFE3EF001FEF06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF6BAE4D1DBFE3EF001FEF06 /* LaunchScreen.storyboard */; };
 		BF6BAE571DBFE5D0001FEF06 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6BAE561DBFE5D0001FEF06 /* Card.swift */; };
 		BF6BAE591DBFE5FA001FEF06 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6BAE581DBFE5FA001FEF06 /* PlayingCard.swift */; };
+		BFC303231DC7C463001A6881 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC303221DC7C463001A6881 /* Deck.swift */; };
+		BFC303271DC7C4A5001A6881 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC303261DC7C4A5001A6881 /* PlayingCardDeck.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		BF6BAE501DBFE3EF001FEF06 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF6BAE561DBFE5D0001FEF06 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Card.swift; path = Model/Card.swift; sourceTree = "<group>"; };
 		BF6BAE581DBFE5FA001FEF06 /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayingCard.swift; path = Model/PlayingCard.swift; sourceTree = "<group>"; };
+		BFC303221DC7C463001A6881 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deck.swift; path = Model/Deck.swift; sourceTree = "<group>"; };
+		BFC303261DC7C4A5001A6881 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayingCardDeck.swift; path = Model/PlayingCardDeck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,8 @@
 			children = (
 				BF6BAE561DBFE5D0001FEF06 /* Card.swift */,
 				BF6BAE581DBFE5FA001FEF06 /* PlayingCard.swift */,
+				BFC303221DC7C463001A6881 /* Deck.swift */,
+				BFC303261DC7C4A5001A6881 /* PlayingCardDeck.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -167,6 +173,8 @@
 			files = (
 				BF6BAE571DBFE5D0001FEF06 /* Card.swift in Sources */,
 				BF6BAE591DBFE5FA001FEF06 /* PlayingCard.swift in Sources */,
+				BFC303231DC7C463001A6881 /* Deck.swift in Sources */,
+				BFC303271DC7C4A5001A6881 /* PlayingCardDeck.swift in Sources */,
 				BF6BAE451DBFE3EF001FEF06 /* AppDelegate.swift in Sources */,
 				BF239BB31DC27DB300920491 /* CardGameController.swift in Sources */,
 			);
