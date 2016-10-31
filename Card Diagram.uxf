@@ -46,7 +46,7 @@ bg=cyan
       <x>960</x>
       <y>560</y>
       <w>290</w>
-      <h>160</h>
+      <h>180</h>
     </coordinates>
     <panel_attributes>CardGame.Model::PlayingCard
 --
@@ -58,6 +58,8 @@ bg=cyan
 + getSuit() : String
 + getColor() : UIColor
 + init() : Initializer
++ init(withRan:Int, ofSuit:String)
++ toString() : String
 bg=blue</panel_attributes>
     <additional_attributes/>
   </element>
