@@ -10,7 +10,6 @@ import Foundation
 
 class PlayingCardDeck : Deck
 {
-    internal lazy var cards = [PlayingCard] ()
     
     override init()
     {
@@ -28,12 +27,6 @@ class PlayingCardDeck : Deck
             }
         }
     }
-    
-    func shuffleDeck() -> Void
-    {
-        
-    }
-    
     func orderDeck() -> Void
     {
         
