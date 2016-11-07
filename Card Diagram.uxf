@@ -4,8 +4,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>320</x>
-      <y>150</y>
+      <x>40</x>
+      <y>50</y>
       <w>310</w>
       <h>110</h>
     </coordinates>
@@ -22,8 +22,8 @@ bg=green</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>960</x>
-      <y>130</y>
+      <x>880</x>
+      <y>120</y>
       <w>290</w>
       <h>140</h>
     </coordinates>
@@ -43,8 +43,8 @@ bg=cyan
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>960</x>
-      <y>560</y>
+      <x>880</x>
+      <y>350</y>
       <w>290</w>
       <h>180</h>
     </coordinates>
@@ -66,13 +66,13 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1100</x>
-      <y>260</y>
+      <x>1020</x>
+      <y>250</y>
       <w>30</w>
-      <h>320</h>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;300.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -102,30 +102,13 @@ bg=blue</panel_attributes>
       <x>420</x>
       <y>370</y>
       <w>310</w>
-      <h>110</h>
-    </coordinates>
-    <panel_attributes>CardGame.Model::Deck
---
-
---
-
-bg=blue</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>420</x>
-      <y>580</y>
-      <w>310</w>
       <h>100</h>
     </coordinates>
     <panel_attributes>CardGame.Model::PlayingCardDeck
 --
-cards : [PlayingCard]
+- card
 --
 +init
-+shuffleDeck() : Void
 +orderDeck() : Void
 bg=magenta</panel_attributes>
     <additional_attributes/>
@@ -134,24 +117,57 @@ bg=magenta</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>560</x>
-      <y>470</y>
+      <y>270</y>
       <w>30</w>
-      <h>130</h>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>720</x>
-      <y>630</y>
-      <w>260</w>
+      <y>420</y>
+      <w>180</w>
       <h>40</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
 m1=1
 m2=52</panel_attributes>
-    <additional_attributes>10.0;10.0;240.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>720</x>
+      <y>200</y>
+      <w>180</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-
+m1=1
+m2=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>170</y>
+      <w>310</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>CardGame.Model::Deck
+--
+cards : [Card]
+--
++init()
++shuffleDeck() : Void
++cutDeck : Void
++drawCard() : Card!
++drawRandomCard() : Card!
+bg=black</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
