@@ -17,20 +17,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNO-NM-1dg">
-                                <rect key="frame" x="214" y="136" width="200" height="296"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QNO-NM-1dg">
+                                <rect key="frame" x="200" y="152" width="200" height="296"/>
                                 <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="25"/>
                                 <state key="normal" title="Words" backgroundImage="cardback"/>
-                                <variation key="heightClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="200" y="252" width="200" height="296"/>
-                                </variation>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="106" y="227" width="200" height="296"/>
-                                </variation>
+                                <connections>
+                                    <action selector="cardClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hr6-3i-6cK"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z48-WS-Zxb">
+                                <rect key="frame" x="200" y="101" width="200" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QNO-NM-1dg" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AQ0-tQ-Wm9"/>
+                            <constraint firstItem="QNO-NM-1dg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KzE-Gm-lfv"/>
+                            <constraint firstItem="QNO-NM-1dg" firstAttribute="top" secondItem="Z48-WS-Zxb" secondAttribute="bottom" constant="30" id="X7V-1z-qQQ"/>
+                            <constraint firstItem="Z48-WS-Zxb" firstAttribute="width" secondItem="QNO-NM-1dg" secondAttribute="width" id="ZiN-6x-Lln"/>
+                            <constraint firstItem="Z48-WS-Zxb" firstAttribute="leading" secondItem="QNO-NM-1dg" secondAttribute="leading" id="orN-mC-SgW"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cardButton" destination="QNO-NM-1dg" id="Vja-LV-IPQ"/>
+                        <outlet property="cardLabel" destination="Z48-WS-Zxb" id="oya-B2-ybj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
