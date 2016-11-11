@@ -16,6 +16,7 @@
 		BF6BAE591DBFE5FA001FEF06 /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6BAE581DBFE5FA001FEF06 /* PlayingCard.swift */; };
 		BFC303231DC7C463001A6881 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC303221DC7C463001A6881 /* Deck.swift */; };
 		BFC303271DC7C4A5001A6881 /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC303261DC7C4A5001A6881 /* PlayingCardDeck.swift */; };
+		BFF878D31DD656F400F36EDC /* StupidGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF878D21DD656F400F36EDC /* StupidGame.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		BF6BAE581DBFE5FA001FEF06 /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayingCard.swift; path = Model/PlayingCard.swift; sourceTree = "<group>"; };
 		BFC303221DC7C463001A6881 /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Deck.swift; path = Model/Deck.swift; sourceTree = "<group>"; };
 		BFC303261DC7C4A5001A6881 /* PlayingCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlayingCardDeck.swift; path = Model/PlayingCardDeck.swift; sourceTree = "<group>"; };
+		BFF878D21DD656F400F36EDC /* StupidGame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StupidGame.swift; path = Model/StupidGame.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +72,8 @@
 		BF6BAE431DBFE3EF001FEF06 /* CardGame */ = {
 			isa = PBXGroup;
 			children = (
-				BF6BAE441DBFE3EF001FEF06 /* AppDelegate.swift */,
+				BFB2FB6A1DD3B3010029A6DA /* resources */,
 				BF6BAE5B1DBFE686001FEF06 /* View */,
-				BF6BAE501DBFE3EF001FEF06 /* Info.plist */,
 				BF6BAE5A1DBFE662001FEF06 /* Model */,
 				BF239BB41DC27DED00920491 /* Controller */,
 			);
@@ -86,6 +87,7 @@
 				BF6BAE581DBFE5FA001FEF06 /* PlayingCard.swift */,
 				BFC303221DC7C463001A6881 /* Deck.swift */,
 				BFC303261DC7C4A5001A6881 /* PlayingCardDeck.swift */,
+				BFF878D21DD656F400F36EDC /* StupidGame.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -98,6 +100,15 @@
 				BF6BAE4D1DBFE3EF001FEF06 /* LaunchScreen.storyboard */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		BFB2FB6A1DD3B3010029A6DA /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				BF6BAE441DBFE3EF001FEF06 /* AppDelegate.swift */,
+				BF6BAE501DBFE3EF001FEF06 /* Info.plist */,
+			);
+			name = resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 				BF6BAE591DBFE5FA001FEF06 /* PlayingCard.swift in Sources */,
 				BFC303231DC7C463001A6881 /* Deck.swift in Sources */,
 				BFC303271DC7C4A5001A6881 /* PlayingCardDeck.swift in Sources */,
+				BFF878D31DD656F400F36EDC /* StupidGame.swift in Sources */,
 				BF6BAE451DBFE3EF001FEF06 /* AppDelegate.swift in Sources */,
 				BF239BB31DC27DB300920491 /* CardGameController.swift in Sources */,
 			);
