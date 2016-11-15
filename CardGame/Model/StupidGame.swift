@@ -6,7 +6,7 @@
 //  Copyright © 2016 Hill, Isaac. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class StupidGame
 {
@@ -27,6 +27,27 @@ class StupidGame
     
     func startGame() -> Void
     {
+        gameDeckOne.shuffleDeck()
+        gameDeckTwo.shuffleDeck()
         
+        if let gameCardOne = gameDeckOne.drawRandomCard() as? PlayingCard
+        {
+            cardButtonOne.setTitle("\(gameCardOne.getCardData())", forState: UIControlState.Normal)
+            cardButtonTwo.setTitle("\(gameCardTwo.getCardData())", forState: UIControlState.Normal)
+            
+            if gameCardOne.getRank() == gameCardTwo.getRank()
+            {
+                point += 1
+                let content = "You have gained 1 point. You now have \(point) point(s)."
+            }
+            else
+            {
+                let content = "No match. You have \(point) point(s)."
+            }
+        }
+        else
+        {
+            let content = "Game Over. Your final score is.... \(point) point(s)."
+        }
     }
 }
