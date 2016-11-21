@@ -4,36 +4,35 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>70</x>
-      <y>110</y>
-      <w>320</w>
-      <h>150</h>
+      <x>150</x>
+      <y>180</y>
+      <w>310</w>
+      <h>110</h>
     </coordinates>
-    <panel_attributes>CardGame.View::CardView
+    <panel_attributes>Package::ClassName
 --
-frontImage: UIImageView
-backImage : UIImageView
-isFaceUp : Bool
-bottomLabel : UILabel
-topLabel : UILabel
+Data Members
+Should be private(-)
 --
-
-bg=green
-transparency=0</panel_attributes>
+methods and init/Consturctor
+public/private as needed (+/-)
+bg=green</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1020</x>
+      <x>990</x>
       <y>250</y>
       <w>290</w>
       <h>140</h>
     </coordinates>
     <panel_attributes>CardGame.Model::Card
 --
+- backImage : UIImage
 - isFaceUP : Bool
 --
++ getBackImage() : UIImage
 + getFacing() : Bool
 + init() : Initializer
 + toString() : String
@@ -44,7 +43,7 @@ bg=cyan
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1010</x>
+      <x>980</x>
       <y>480</y>
       <w>300</w>
       <h>200</h>
@@ -68,7 +67,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1160</x>
+      <x>1130</x>
       <y>380</y>
       <w>30</w>
       <h>120</h>
@@ -79,7 +78,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1690</x>
+      <x>1660</x>
       <y>280</y>
       <w>190</w>
       <h>30</h>
@@ -90,7 +89,7 @@ bg=blue</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1650</x>
+      <x>1620</x>
       <y>340</y>
       <w>140</w>
       <h>240</h>
@@ -101,7 +100,7 @@ bg=blue</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>560</x>
+      <x>530</x>
       <y>500</y>
       <w>310</w>
       <h>100</h>
@@ -118,7 +117,7 @@ bg=magenta</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>700</x>
+      <x>670</x>
       <y>400</y>
       <w>30</w>
       <h>120</h>
@@ -129,7 +128,7 @@ bg=magenta</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>860</x>
+      <x>830</x>
       <y>550</y>
       <w>170</w>
       <h>40</h>
@@ -142,7 +141,7 @@ m2=52</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>860</x>
+      <x>830</x>
       <y>330</y>
       <w>180</w>
       <h>40</h>
@@ -155,7 +154,7 @@ m2=0..n</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>560</x>
+      <x>530</x>
       <y>280</y>
       <w>310</w>
       <h>130</h>
@@ -175,7 +174,7 @@ bg=black</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>570</x>
+      <x>540</x>
       <y>670</y>
       <w>310</w>
       <h>160</h>
@@ -191,38 +190,6 @@ bg=black</panel_attributes>
 + init() : Initializer
 + startGame() : Void
 bg=orange</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLPackage</id>
-    <coordinates>
-      <x>30</x>
-      <y>30</y>
-      <w>450</w>
-      <h>460</h>
-    </coordinates>
-    <panel_attributes>View
---
-bg=pink
-transparency=80</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>1000</x>
-      <y>40</y>
-      <w>310</w>
-      <h>110</h>
-    </coordinates>
-    <panel_attributes>Package::ClassName
---
-Data Members
-Should be private(-)
---
-methods and init/Consturctor
-public/private as needed (+/-)
-bg=green</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
