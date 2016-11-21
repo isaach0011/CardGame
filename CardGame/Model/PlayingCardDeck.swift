@@ -19,9 +19,6 @@ class PlayingCardDeck : Deck
         {
             for var rank = 1; rank <= PlayingCard.maxRank(); rank += 1
             {
-//              let tempCard = PlayingCard()
-//              tempCard.rank = rank
-//              tempCard.suit = suit
                 let tempCard = PlayingCard(withRank: rank, ofSuit: suit)
                 cards.append(tempCard)
             }
