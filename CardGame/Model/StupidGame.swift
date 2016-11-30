@@ -30,6 +30,10 @@ class StupidGame
         gameDeckOne.shuffleDeck()
         gameDeckTwo.shuffleDeck()
         
+    }
+    
+    func playGame() -> Void
+    {
         if let gameCardOne = gameDeckOne.drawRandomCard() as? PlayingCard
         {
             cardButtonOne.setTitle("\(gameCardOne.getCardData())", forState: UIControlState.Normal)
