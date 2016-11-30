@@ -15,7 +15,9 @@ class StupidGame
     internal var gameCardOne : PlayingCard
     internal var gameCardTwo : PlayingCard
     internal var point = Int()
-    
+    private var cardOne = String()
+    private var cardTwo = String()
+
     init()
     {
         gameDeckOne = PlayingCardDeck()
@@ -23,10 +25,14 @@ class StupidGame
         gameCardOne = PlayingCard()
         gameCardTwo = PlayingCard()
         point = 0
+        cardOne = ""
+        cardTwo = ""
     }
     
     func startGame() -> Void
     {
+        gameDeckOne = PlayingCardDeck()
+        gameDeckTwo = PlayingCardDeck()
         gameDeckOne.shuffleDeck()
         gameDeckTwo.shuffleDeck()
         
@@ -36,17 +42,22 @@ class StupidGame
     {
         if let gameCardOne = gameDeckOne.drawRandomCard() as? PlayingCard
         {
-            cardButtonOne.setTitle("\(gameCardOne.getCardData())", forState: UIControlState.Normal)
-            cardButtonTwo.setTitle("\(gameCardTwo.getCardData())", forState: UIControlState.Normal)
+            if let gameCardTwo = gameDeckTwo.drawRandomCard() as? PlayingCard
+            {
             
-            if gameCardOne.getRank() == gameCardTwo.getRank()
-            {
-                point += 1
-                let content = "You have gained 1 point. You now have \(point) point(s)."
-            }
-            else
-            {
-                let content = "No match. You have \(point) point(s)."
+            
+                cardOne = "\(gameCardOne.getCardData())"
+                cardTwo = "\(gameCardTwo.getCardData())"
+            
+                if gameCardOne.getRank() == gameCardTwo.getRank()
+                {
+                    point += 1
+                        let content = "You have gained 1 point. You now have \(point) point(s)."
+                }
+                else
+                {
+                    let content = "No match. You have \(point) point(s)."
+                }
             }
         }
         else

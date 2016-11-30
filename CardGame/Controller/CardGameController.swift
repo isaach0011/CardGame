@@ -11,32 +11,58 @@ import UIKit
 class CardGameController : UIViewController
 {
     private lazy var clickCount = Int()
-    private lazy var cardDeck = PlayingCardDeck()
+    internal var point = Int()
+    private var game = StupidGame()
+    private var cardOne = String()
+    private var cardTwo = String()
     
-    @IBOutlet weak var cardLabel: UILabel!
-    @IBOutlet weak var cardButton: UIButton!
     
+    @IBOutlet weak var pointName: UILabel!
+    @IBOutlet weak var pointLabel: UILabel!
+    
+    @IBOutlet weak var cardButtonOne: UIButton!
+    @IBOutlet weak var cardButtonTwo: UIButton!
+    
+
     override func viewDidLoad() -> Void
     {
-        
+
     }
     
-    @IBAction func cardClick(sender: UIButton)
+    @IBAction func resetButton(sender: UIButton)
     {
-        clickCount += 1
-        
-        let content = "You clicked \(clickCount) times!"
-        
-        if let currentCard = cardDeck.drawRandomCard() as? PlayingCard
-        {
-            cardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
-        }
-        else
-        {
-            cardButton.setTitle("deck over", forState: UIControlState.Normal)
-            cardDeck = PlayingCardDeck()
-        }
-        
-        cardLabel.text = content
+        game.startGame()
     }
+    
+    @IBAction func drawButton(sender: UIButton)
+    {
+        game.playGame()
+    }
+    
+    func setCardOne(cardOne : String) -> Void
+    {
+        cardButtonOne.setTitle("\(cardOne)", forState: UIControlState.Normal)
+    }
+    func setCardTwo(cardOne : String) -> Void
+    {
+        cardButtonTwo.setTitle("\(cardTwo)", forState: UIControlState.Normal)
+    }
+//    @IBAction func cardClick(sender: UIButton)
+//    {
+//        clickCount += 1
+//        
+//        let content = "You clicked \(clickCount) times!"
+//        
+//        if let currentCard = cardDeck.drawRandomCard() as? PlayingCard
+//        {
+//            cardButton.setTitle("\(currentCard.getCardData())", forState: UIControlState.Normal)
+//        }
+//        else
+//        {
+//            cardButton.setTitle("deck over", forState: UIControlState.Normal)
+//            cardDeck = PlayingCardDeck()
+//        }
+//        
+//        cardLabel.text = content
+//    }
 }
