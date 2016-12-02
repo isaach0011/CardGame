@@ -32,21 +32,21 @@ class CardGameController : UIViewController
     @IBAction func resetButton(sender: UIButton)
     {
         game.startGame()
+        cardButtonOne.setTitle("Draw", forState: UIControlState.Normal)
+        cardButtonTwo.setTitle("Draw", forState: UIControlState.Normal)
+        point = 0
+        pointLabel.text = "\(point)"
     }
     
     @IBAction func drawButton(sender: UIButton)
     {
-        game.playGame()
+        point += game.playGame()
+        pointLabel.text = "\(point)"
+        cardButtonOne.setTitle(game.getCardOne(), forState: UIControlState.Normal)
+        cardButtonTwo.setTitle(game.getCardTwo(), forState: UIControlState.Normal)
     }
+  
     
-    func setCardOne(cardOne : String) -> Void
-    {
-        cardButtonOne.setTitle("\(cardOne)", forState: UIControlState.Normal)
-    }
-    func setCardTwo(cardOne : String) -> Void
-    {
-        cardButtonTwo.setTitle("\(cardTwo)", forState: UIControlState.Normal)
-    }
 //    @IBAction func cardClick(sender: UIButton)
 //    {
 //        clickCount += 1

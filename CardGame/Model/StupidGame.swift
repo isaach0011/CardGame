@@ -14,7 +14,6 @@ class StupidGame
     internal var gameDeckTwo : PlayingCardDeck
     internal var gameCardOne : PlayingCard
     internal var gameCardTwo : PlayingCard
-    internal var point = Int()
     private var cardOne = String()
     private var cardTwo = String()
 
@@ -24,7 +23,6 @@ class StupidGame
         gameDeckTwo = PlayingCardDeck()
         gameCardOne = PlayingCard()
         gameCardTwo = PlayingCard()
-        point = 0
         cardOne = ""
         cardTwo = ""
     }
@@ -38,31 +36,39 @@ class StupidGame
         
     }
     
-    func playGame() -> Void
+    func playGame() -> Int
     {
+        var points = 0
         if let gameCardOne = gameDeckOne.drawRandomCard() as? PlayingCard
         {
             if let gameCardTwo = gameDeckTwo.drawRandomCard() as? PlayingCard
             {
-            
-            
                 cardOne = "\(gameCardOne.getCardData())"
                 cardTwo = "\(gameCardTwo.getCardData())"
             
                 if gameCardOne.getRank() == gameCardTwo.getRank()
                 {
-                    point += 1
-                        let content = "You have gained 1 point. You now have \(point) point(s)."
+                    points += 1
                 }
-                else
-                {
-                    let content = "No match. You have \(point) point(s)."
-                }
+
             }
         }
         else
         {
-            let content = "Game Over. Your final score is.... \(point) point(s)."
+            cardOne = "Deck Over"
+            cardTwo = "Deck Over"
+ 
         }
+        return points
+    }
+    
+    func getCardOne() -> String
+    {
+        return cardOne
+    }
+    
+    func getCardTwo() -> String
+    {
+        return cardTwo
     }
 }
