@@ -10,11 +10,11 @@ import UIKit
 
 class CardGameController : UIViewController
 {
-    private lazy var clickCount = Int()
+    fileprivate lazy var clickCount = Int()
     internal var point = Int()
-    private var game = StupidGame()
-    private var cardOne = String()
-    private var cardTwo = String()
+    fileprivate var game = StupidGame()
+    fileprivate var cardOne = String()
+    fileprivate var cardTwo = String()
     
     
     @IBOutlet weak var pointName: UILabel!
@@ -29,21 +29,21 @@ class CardGameController : UIViewController
 
     }
     
-    @IBAction func resetButton(sender: UIButton)
+    @IBAction func resetButton(_ sender: UIButton)
     {
         game.startGame()
-        cardButtonOne.setTitle("Draw", forState: UIControlState.Normal)
-        cardButtonTwo.setTitle("Draw", forState: UIControlState.Normal)
+        cardButtonOne.setTitle("Draw", for: UIControlState())
+        cardButtonTwo.setTitle("Draw", for: UIControlState())
         point = 0
         pointLabel.text = "\(point)"
     }
     
-    @IBAction func drawButton(sender: UIButton)
+    @IBAction func drawButton(_ sender: UIButton)
     {
         point += game.playGame()
         pointLabel.text = "\(point)"
-        cardButtonOne.setTitle(game.getCardOne(), forState: UIControlState.Normal)
-        cardButtonTwo.setTitle(game.getCardTwo(), forState: UIControlState.Normal)
+        cardButtonOne.setTitle(game.getCardOne(), for: UIControlState())
+        cardButtonTwo.setTitle(game.getCardTwo(), for: UIControlState())
     }
   
     

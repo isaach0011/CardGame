@@ -18,14 +18,14 @@ class PlayingCard : Card
     override init()
     {
         suit = String()
-        color = UIColor.redColor()
+        color = UIColor.red
         rank = 0
         super.init()
     }
     
     init(withRank: Int, ofSuit:String)
     {
-        color = UIColor.redColor()
+        color = UIColor.red
         suit = ofSuit
         rank = withRank
         super.init()

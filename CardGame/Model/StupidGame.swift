@@ -14,8 +14,8 @@ class StupidGame
     internal var gameDeckTwo : PlayingCardDeck
     internal var gameCardOne : PlayingCard
     internal var gameCardTwo : PlayingCard
-    private var cardOne = String()
-    private var cardTwo = String()
+    fileprivate var cardOne = String()
+    fileprivate var cardTwo = String()
 
     init()
     {
