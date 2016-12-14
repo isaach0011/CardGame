@@ -102,11 +102,24 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XP9-VX-ZlD">
+                                <rect key="frame" x="184" y="607" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="nzR-Do-5E8"/>
+                                    <constraint firstAttribute="width" constant="46" id="sTB-FN-U3C"/>
+                                </constraints>
+                                <state key="normal" title="Auto"/>
+                                <connections>
+                                    <action selector="autoButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zic-M1-86k"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="i5h-gQ-OOy" firstAttribute="leading" secondItem="QNO-NM-1dg" secondAttribute="trailing" constant="14" id="3Ts-ma-m1g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XP9-VX-ZlD" secondAttribute="trailing" constant="164" id="5DN-bm-KB8"/>
                             <constraint firstItem="i5h-gQ-OOy" firstAttribute="baseline" secondItem="QNO-NM-1dg" secondAttribute="baseline" id="7Pz-rZ-Mpr"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="XP9-VX-ZlD" secondAttribute="bottom" constant="99" id="Asu-ke-6tM"/>
                             <constraint firstItem="cjL-uf-6l4" firstAttribute="leading" secondItem="Z48-WS-Zxb" secondAttribute="trailing" constant="8" id="Lpe-y6-uwR"/>
                             <constraint firstItem="GS2-8k-EiB" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Ngx-hO-FHG"/>
                             <constraint firstItem="i5h-gQ-OOy" firstAttribute="top" secondItem="cjL-uf-6l4" secondAttribute="bottom" constant="36" id="Pxv-g4-r5M"/>
